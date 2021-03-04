@@ -3,4 +3,4 @@
   hosts: 192.168.56.200 
   tasks: 
   - name: Execute the script
-    script: sh "/home/jesus/test.sh"
+    script: "/home/jesus/test.sh"
