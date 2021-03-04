@@ -2,5 +2,5 @@
 - name: Ejecutando un script
   hosts: localhost 
   tasks: 
-  - name: Run a script with arguments (free form)
-    ansible.builtin.script: /home/jesus/test.sh
+  - name: Execute the script
+    command: sh /home/jesus/test.sh
