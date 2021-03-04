@@ -3,4 +3,4 @@
   hosts: localhost 
   tasks: 
   - name: Execute the script
-    command: sh /home/jesus/test.sh
+    command: /home/jesus/test.sh
