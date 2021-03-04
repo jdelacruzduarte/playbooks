@@ -1,5 +1,5 @@
 - name: Ejecutando un script
-  hosts: 10.0.0.178 
+  hosts: 172.21.24.177 
   tasks: 
   - name: Execute the script
     command: cat "/T24/areas/t24dmpro/coll-load-test/job.status"
