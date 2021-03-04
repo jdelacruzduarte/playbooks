@@ -1,6 +1,6 @@
 ---
 - name: Ejecutando un script
-  hosts: localhost 
+  hosts: local 
   tasks: 
   - name: Execute the script
     command: sh "/home/jesus/test.sh"
