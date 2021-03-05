@@ -1,0 +1,19 @@
+#   Prueba de copiado de archivos
+#
+---
+- name: Ejecutando un script
+  hosts: 192.168.56.200 
+  tasks:
+  - name: Creando el directorio
+      file: 
+        path: /home/jesus/newdir
+        state: directory
+
+  - name: Copiando archivo 1
+    copy:
+      src: /home/jesus/test.sh
+      dest: /home/jesus/newdir/
+    
+  
+  #- name: Mostrar archivos de status
+  #  command: cat "/home/jesus/job.status"
