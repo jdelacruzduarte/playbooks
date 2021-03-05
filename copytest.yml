@@ -6,10 +6,12 @@
   become: yes 
   tasks:
   - name: Creando el directorio
-      fetch:
-        path: /home/jesus/newdir
-        state: directory
-        mode: '0755'
+    file:
+      path: "/home/jesus/newdir"
+      state: directory
+      owner: jesus
+      group: jesus
+      mode: '0755'
 
   - name: Copiando archivo 1
     copy:
