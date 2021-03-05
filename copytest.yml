@@ -16,6 +16,7 @@
     copy:
       src: /home/jesus/test.sh
       dest: /home/jesus/newdir/
+      remote_src: yes
     
   
   #- name: Mostrar archivos de status
