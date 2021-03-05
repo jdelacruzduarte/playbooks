@@ -5,7 +5,7 @@
   hosts: 192.168.56.200 
   tasks:
   - name: Creando el directorio
-      file:
+      ansible.builtin.file:
         path: /home/jesus/newdir
         state: directory
         mode: '0755'
