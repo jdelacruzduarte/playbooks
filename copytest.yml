@@ -5,9 +5,10 @@
   hosts: 192.168.56.200 
   tasks:
   - name: Creando el directorio
-      file: 
+      file:
         path: /home/jesus/newdir
         state: directory
+        mode: '0755'
 
   - name: Copiando archivo 1
     copy:
