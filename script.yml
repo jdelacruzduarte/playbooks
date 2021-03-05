@@ -2,5 +2,9 @@
 - name: Ejecutando un script
   hosts: 192.168.56.200 
   tasks: 
-  - name: Execute the script
+  - name: Ejecución de script
     command: sh "/home/jesus/test.sh"
+
+  tasks: 
+  - name: Mostrar archivos de status
+    command: cat "/home/jesus/job.status"
