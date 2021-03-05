@@ -4,7 +4,6 @@
   tasks: 
   - name: Ejecución de script
     command: sh "/home/jesus/test.sh"
-
   tasks: 
   - name: Mostrar archivos de status
     command: cat "/home/jesus/job.status"
