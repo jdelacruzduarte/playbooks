@@ -2,10 +2,11 @@
 #
 ---
 - name: Ejecutando un script
-  hosts: 192.168.56.200 
+  hosts: 192.168.56.200
+  become: yes 
   tasks:
   - name: Creando el directorio
-      ansible.builtin.file:
+      fetch:
         path: /home/jesus/newdir
         state: directory
         mode: '0755'
