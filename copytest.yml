@@ -4,11 +4,11 @@
 - name: Ejecutando un script
   hosts: 192.168.56.200
   vars:
-    var_time: "{{lookup('pipe', 'date \"+%d%m%Y\"')}}"
+    var_time: "Var:{{lookup('pipe', 'date \"+%d%m%Y\"')}}"
   tasks:
   - name: Creando el directorio
     file:
-      path: "/home/jesus/var=var_time}"
+      path: "/home/jesus/{{var_time}}"
       state: directory
       owner: jesus
       group: jesus
@@ -17,7 +17,7 @@
   - name: Copiando archivo 1
     copy:
       src: /home/jesus/test.sh
-      dest: /home/jesus/mkdssss/
+      dest: /home/jesus/{{var_time}}/
       remote_src: yes
     
   
