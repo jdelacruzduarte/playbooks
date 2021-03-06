@@ -7,7 +7,7 @@
   tasks:
   - name: Creando el directorio
     file:
-      path: "/home/jesus/fecha"
+      path: "/home/jesus/{{fecha}}"
       state: directory
       owner: jesus
       group: jesus
@@ -16,7 +16,7 @@
   - name: Copiando archivo 1
     copy:
       src: /home/jesus/test.sh
-      dest: /home/jesus/newdir/
+      dest: /home/jesus/{{fecha}}/
       remote_src: yes
     
   
