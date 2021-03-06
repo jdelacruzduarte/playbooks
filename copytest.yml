@@ -4,7 +4,7 @@
 - name: Ejecutando un script
   hosts: 192.168.56.200
   vars:
-    var_time: "Var:{{lookup('pipe', 'date \"+%H%M%S\"')}}"
+    var_time: "Var:{{lookup('pipe', 'date \"+%d%m%Y\"')}}"
   tasks:
   - name: Creando el directorio
     file:
