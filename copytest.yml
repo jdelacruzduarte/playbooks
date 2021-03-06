@@ -1,13 +1,14 @@
 #   Prueba de copiado de archivos
 #
 ---
-- set_fact: fecha="{{ lookup('pipe','date +%Y-%m-%d') }}"
 - name: Ejecutando un script
   hosts: 192.168.56.200
+  vars:
+    var_time: "Var:{{lookup('pipe', 'date \"+%H%M%S\"')}}"
   tasks:
   - name: Creando el directorio
     file:
-      path: "/home/jesus/{{fecha}}"
+      path: "/home/jesus/var=var_time}"
       state: directory
       owner: jesus
       group: jesus
