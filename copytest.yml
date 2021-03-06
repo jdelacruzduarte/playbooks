@@ -1,12 +1,13 @@
 #   Prueba de copiado de archivos
 #
 ---
+- set_fact: fecha="{{ lookup('pipe','date +%Y-%m-%d') }}"
 - name: Ejecutando un script
   hosts: 192.168.56.200
   tasks:
   - name: Creando el directorio
     file:
-      path: "/home/jesus/newdir"
+      path: "/home/jesus/fecha"
       state: directory
       owner: jesus
       group: jesus
