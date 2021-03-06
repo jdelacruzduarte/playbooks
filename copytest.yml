@@ -13,8 +13,9 @@
       owner: jesus
       group: jesus
       mode: '0755'
-  - debug: var=var_time - 1
-  - debug: var=var_time 
+  - debug: var=var_time
+  - command: var=var_time - 1
+  - debug: var=var_time  
   - name: Copiando archivo 1
     copy:
       src: /home/jesus/test.sh
