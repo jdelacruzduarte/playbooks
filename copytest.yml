@@ -8,16 +8,16 @@
   tasks:
   - name: Creando el directorio
     file:
-      path: "/home/jesus/var=var_time}"
+      path: "/home/jesus/mkdssss}"
       state: directory
       owner: jesus
       group: jesus
       mode: '0755'
-
+  - debug: var=var_time
   - name: Copiando archivo 1
     copy:
       src: /home/jesus/test.sh
-      dest: /home/jesus/{{fecha}}/
+      dest: /home/jesus/mkdssss/
       remote_src: yes
     
   
