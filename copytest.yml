@@ -12,7 +12,7 @@
       state: directory
       owner: "{{var_owner}}"
       group: "{{var_group}}"
-      mode: '0755'
+      mode: "{{var_mode}}"
   - debug: var=var_time  
   - name: Copiando archivo 1
     copy:
