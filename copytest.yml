@@ -19,13 +19,12 @@
       src: /home/jesus/{{nombreArchivo}}
       dest: /home/jesus/{{var_time}}/
       remote_src: yes
-    
+        
   - name: Copiando multiples archivos
-    copy: src={{ rutaOrigen }} dest={{ rutaDestino }}
+    copy: src={{ rutaOrigen }} dest={{ rutaDestino }} remote_src=no
     with_together:
       - [ '{{file1}}', '{{file2}}' ]
       - [ '/{{destino1}}/', '/{{destino2}}/' ]
-   
-  
+
   #- name: Mostrar archivos de status
   #  command: cat "/home/jesus/job.status"
