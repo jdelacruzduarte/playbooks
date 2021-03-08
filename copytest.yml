@@ -25,9 +25,7 @@
     with_together:
       - [ '{{file1}}', '{{file2}}' ]
       - [ '/{{destino1}}/', '/{{destino2}}/' ]
-    remote_src: yes
-      
-
+   
   
   #- name: Mostrar archivos de status
   #  command: cat "/home/jesus/job.status"
