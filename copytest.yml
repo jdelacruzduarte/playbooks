@@ -21,11 +21,10 @@
       remote_src: yes
     
   - name: Copiando multiples archivos
-    copy: 
-      src:{{rutaOrigen}} dest={{rutaDestino}}
+    copy: src={{ rutaOrigen }} dest={{ rutaDestino }}
     with_together:
-      - ['{{file1}}', '{{file2}}']
-      - ['/{{destino1}}/', '/{{destino2}}/']
+      - [ '{{file1}}', '{{file2}}' ]
+      - [ '/{{destino1}}/', '/{{destino2}}/' ]
     remote_src: yes
       
 
