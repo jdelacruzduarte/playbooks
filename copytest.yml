@@ -24,7 +24,7 @@
     copy: src={{ rutaOrigen }} dest={{ rutaDestino }} remote_src=yes
     with_together:
       - [ '{{file1}}', '{{file2}}' ]
-      - [ '/{{destino1}}/', '/{{destino2}}/' ]
+      - [ '{{destino1}}', '{{destino2}}' ]
 
   #- name: Mostrar archivos de status
   #  command: cat "/home/jesus/job.status"
