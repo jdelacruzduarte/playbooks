@@ -10,8 +10,8 @@
     file:
       path: "/home/jesus/{{var_time}}"
       state: directory
-      owner: jesus
-      group: jesus
+      owner: {{var_owner}}
+      group: {{var_group}}
       mode: '0755'
   - debug: var=var_time  
   - name: Copiando archivo 1
