@@ -4,6 +4,7 @@
   tasks: 
   - name: Ejecución de script
     command: sh "/home/jesus/test.sh"
+    #register: script_status
   
   - name: Mostrar archivos de status
     command: cat "/home/jesus/job.status"
